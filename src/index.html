@@ -9,8 +9,10 @@
     <meta name="author" content="Alisska">
     <title>Самый лучший на свете лендинг</title>
     <link rel="stylesheet" href="css\style.css">
+
     <script src="js/jguery.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
 </head>
 
 <body>
@@ -21,36 +23,30 @@
             <h2 style="font-size:23px;">ОСТАВЬТЕ ИНФОРМАЦИЮ О СЕБЕ, ЧТОБЫ ПОЛУЧИТЬ ДОСТУП К ВЕБИНАРУ <br> И ЧАК-ЧАК НА ПОЧТУ</h2>
 
             <form class="Registration"  action="#">
-                <input required class="RegistInput" name="name" type="text" placeholder="ФИО*">
-                <input required class="RegistInput" name="email" type="email" placeholder="Электронная почта*">
+                <input class="RegistInput" name="name" type="text" placeholder="ФИО*">
+                <input class="RegistInput" name="email" type="email" placeholder="Электронная почта*">
                 <hr size="2" color='#063154' width=100%;>
                 <button class="RegistButton" data-modal="Thanks">Записаться</button>
             </form>
         </div>
-</section>
+    </section>
 
         <footer class="footer">
-            <div>
+            <div class="footer_text">
                 <div>HELLO@MYCOMPANY.COM</div>
                 <a href="+11234567890" style="color: #98C5ED;">+1 123 456 78 90</a>
                 <address>BBBRRRFFF 99 - 66</address>
             </div>
-
-            <button class="RegistButton" data-modal="Thanks">Записаться</button>
             
         </footer>
 
         <div class="overlay">
             <div class="modal">
-                <div class="hide" data-modal="modal_close">&times;</div>
+                <div class="hide" data-modal="modal_close">&times;</div>    <!-- пропал крестик, че делать?? -->
                 <div class="modal_subtitle">ДАННЫЕ ОТПРАВЛЕНЫ</div>
                 <div class="modal_description">Спасибо, что выбрали нашу платформу <br> Желаем удачи в вашем бизнесе</div>
                 <button class="ModalButton" data-modal="modal_close" >Ясно!</button>
             </div>
         </div>
-
-
-
-   
 </body>
 </html>
