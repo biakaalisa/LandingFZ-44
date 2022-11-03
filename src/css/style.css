@@ -117,7 +117,6 @@
 
 .ModalButton{
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -125,7 +124,7 @@
     height: 78px;
     border-color: #062138;
     background: #98C5ED;
-    margin-top: 50px;
+    margin-top: 65px;
 
     font-family: 'Krub';
     font-style: normal;
