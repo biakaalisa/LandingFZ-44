@@ -34,6 +34,12 @@
     color: #063154;
 }
 
+.Regist{
+    width: 100%;
+    display:block;
+    text-align: center;
+}
+
 .Registration{
     display: grid;
     justify-content: center;
@@ -48,7 +54,7 @@
     height: 78px;
     border-color: #50718B;
     margin-top: 40px;
-    background-color:#50718B;
+    background-color:#50718B;       /*цвет пока кнопку не трогают*/
     margin-left: 25%;
     margin-right: 25%;
 
@@ -88,7 +94,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 47px;
-    margin-right: 50px;
     padding-left: 15px;
 }
 
