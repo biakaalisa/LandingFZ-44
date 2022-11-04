@@ -1,6 +1,7 @@
 .footer{
     display: grid;
     background-color: #0A2840;
+    margin: -50px;
 
     text-decoration-color: #50718B;
     text-align: center;
@@ -12,25 +13,33 @@
 }
 
 .section7{
-    display: grid;
+    display:block;
+            
     background-color:white;
-
-    justify-items: center;
-    align-items: center;
+    height: 800px;
     padding: 50px;
+    justify-items: center;
+
+    border: 3px solid #063154;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;     /*обтекание объекта*/
 
     text-align: center;
     color: #063154;
 }
 
 .Registration{
-    display: grid;
     margin-top: 40px;
     width: 100%;
-    justify-items: center;
+    row-gap: 50px;
+    column-gap: 10px;
+    display: grid;
 }
 
 .RegistButton{
+
     width: 334px;
     height: 78px;
     border-color: #98C5ED;
@@ -46,19 +55,42 @@
     color: #000000;
 }
 
-.RegistInput{
+.Input{
+
+    margin-top: 25px;
+    justify-items:end;
+}
+
+.RegistNameInput{
     width: 400px;
     height: 65px;
     border-color: #83a3bf5d;
     background: #83a3bf5d;
     border-radius: 5px;
-    margin-top: 25px;
+    gap: 50px;
 
     font-family: 'Krub';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 47px;
+}
+
+.RegistEmailInput{
+    width: 400px;
+    height: 65px;
+    border-color: #83a3bf5d;
+    background: #83a3bf5d;
+    border-radius: 5px;
+
+    font-family: 'Krub';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 47px;
+}
+
+.error{
 }
 
 .overlay{
@@ -81,6 +113,7 @@
     background-color:#0A2840;
     border-radius: 10px;
 }
+
 
 .modal_subtitle{
     margin-top: 25px;

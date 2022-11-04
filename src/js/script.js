@@ -21,9 +21,9 @@ $(document).ready(function(){
 
 
 
-    /*if(!(this).valid()){        //перезагрузка страницы произвоиться не будет)
+    if(!(this).valid()){        //перезагрузка страницы произвоиться не будет)
         return;
-    }*/
+    }
 
     $('RegistInput').submit(function(e){
 
