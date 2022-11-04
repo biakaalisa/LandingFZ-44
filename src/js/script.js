@@ -1,10 +1,4 @@
 $(document).ready(function(){
-    $('[data-modal=Thanks]').on('click', function(){
-        $('.overlay, #Thanks').fadeIn();
-    })
-    $("[data-modal=modal_close]").on('click', function(){
-        $('.overlay,#Thanks').fadeOut();
-    })
 
     $('.Registration').validate({
         rules:{
@@ -20,23 +14,25 @@ $(document).ready(function(){
         }
     });
 
-    $('form').submit(function(e){
+    $("[data-modal=modal_close]").on('click', function(){
+        $('.overlay,#Thanks').fadeOut();
+    })
+
+    $('RegistInput').submit(function(e){
 
         e.preventDefault();         //отменить стандарт.поведен браузера (после отправки формы
         if(!(this).valid()){        //перезагрузка страницы произвоиться не будет)
             return;
         }
-
         $.ajax({
             type: "POST",
-            url: 'https://discord.gg/mNw8wdWz',
+            url: 'mailer/smart.php',
             data: $(this).serialize()
         }).done(function(){
             $(this).find("input").val("");
-
-            $('form').trigger('reset');
+            $('.overlay, #Thanks').fadeIn();
+            $('RegistInput').trigger('reset');
         })
-        
         return false;
     })
 })
