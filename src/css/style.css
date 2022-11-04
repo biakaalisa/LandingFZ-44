@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.agreement{
+    font-size:18px;
+}
+
 .section7{
     display:block;
             
@@ -31,32 +35,42 @@
 }
 
 .Registration{
+    display: grid;
+    justify-content: center;
     margin-top: 40px;
     width: 100%;
     row-gap: 50px;
     column-gap: 10px;
-    display: grid;
 }
 
 .RegistButton{
-
-    width: 334px;
+    width: 50%;
     height: 78px;
-    border-color: #98C5ED;
-    background: #98C5ED;
+    border-color: #50718B;
     margin-top: 40px;
+    background-color:#50718B;
+    margin-left: 25%;
+    margin-right: 25%;
 
+    color: #ffffff;
     font-family: 'Krub';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 47px;
     text-align: center;
-    color: #000000;
+
+    transition-duration: 0.6s;
+}
+
+.RegistButton:hover {           /*что делается при наведении на кнопку*/
+    background-color: #063154;
+    color: white;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .Input{
-
     margin-top: 25px;
     justify-items:end;
 }
@@ -74,23 +88,33 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 47px;
+    margin-right: 50px;
+    padding-left: 15px;
+}
+
+#name-error{
+    display: block;
 }
 
 .RegistEmailInput{
+
     width: 400px;
     height: 65px;
     border-color: #83a3bf5d;
     background: #83a3bf5d;
     border-radius: 5px;
+    top: 30px;
 
     font-family: 'Krub';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 47px;
+    padding-left: 15px;
 }
 
-.error{
+#email-error{
+    display: block;
 }
 
 .overlay{
