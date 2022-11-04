@@ -18,6 +18,13 @@ $(document).ready(function(){
         $('.overlay,#Thanks').fadeOut();
     })
 
+
+
+
+    /*if(!(this).valid()){        //перезагрузка страницы произвоиться не будет)
+        return;
+    }*/
+
     $('RegistInput').submit(function(e){
 
         e.preventDefault();         //отменить стандарт.поведен браузера (после отправки формы
@@ -31,7 +38,7 @@ $(document).ready(function(){
         }).done(function(){
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('RegistInput').trigger('reset');
+            //$('RegistInput').trigger('reset');
         })
         return false;
     })

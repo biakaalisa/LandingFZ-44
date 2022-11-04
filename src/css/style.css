@@ -82,15 +82,6 @@
     border-radius: 10px;
 }
 
-.modal_close{
-    position: absolute;
-    top: 5px;
-    right: -40px;
-
-    color: rgb(255, 255, 255);
-    font-size: 35px;
-}
-
 .modal_subtitle{
     margin-top: 25px;
     text-align: center;
