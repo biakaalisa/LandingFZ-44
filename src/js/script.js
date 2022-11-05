@@ -18,9 +18,9 @@ $(document).ready(function(){
         $('.overlay,#Thanks').fadeOut();
     })
 
-    $('RegistInput').submit(function(e){
+    $('#EForm').on("submit", function(e){
 
-        e.preventDefault();         //отменить стандарт.поведен браузера (после отправки формы
+        e.preventDefault();      //отменить стандарт.поведен браузера (после отправки формы
                                     //перезагрузка страницы произвоиться не будет)
         $.ajax({
             type: "POST",
@@ -29,7 +29,7 @@ $(document).ready(function(){
         }).done(function(){
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            //$('RegistInput').trigger('reset');
+            $('RegistInput').trigger('reset');
         })
         return false;
     })
