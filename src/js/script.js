@@ -18,19 +18,10 @@ $(document).ready(function(){
         $('.overlay,#Thanks').fadeOut();
     })
 
-
-
-
-    if(!(this).valid()){        //перезагрузка страницы произвоиться не будет)
-        return;
-    }
-
     $('RegistInput').submit(function(e){
 
         e.preventDefault();         //отменить стандарт.поведен браузера (после отправки формы
-        if(!(this).valid()){        //перезагрузка страницы произвоиться не будет)
-            return;
-        }
+                                    //перезагрузка страницы произвоиться не будет)
         $.ajax({
             type: "POST",
             url: 'mailer/smart.php',

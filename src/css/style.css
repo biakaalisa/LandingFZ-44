@@ -190,3 +190,8 @@
     justify-items: center;
     align-items: center;
 }
+
+.footer_text{
+    font-size: 25px;
+    margin-top: 5px;
+}
