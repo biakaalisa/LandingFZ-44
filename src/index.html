@@ -15,18 +15,16 @@
     <script src="js/jquery.validate.min.js"></script>
 </head>
 
-
-
 <body>
     
     <header class="STEPgroup">
-        <img src="img/Logo.png" id="Logo">
-        <a id="HeaderProgramm">Программа</a>
-        <a id="HeaderSpikers">Спикеры</a>
-        <a id="HeaderFeedback">Отзывы</a>
-        <a id='HeaderReg'>Регистрация</a>
+        <img src="img/Logo.png" id="Logo" href="#s1">
+        <a class="navigationLink" id="HeaderProgramm" href="#s2">Программа</a>
+        <a class="navigationLink" id="HeaderSpikers" href="#s4">Спикеры</a>
+        <a class="navigationLink" id="HeaderFeedback" href="#s6">Отзывы</a>
+        <a class="navigationLink" id='HeaderReg' href="#s7" >Регистрация</a>
     </header>
-    <div class="Kostyl"></div>
+    <div class="Kostyl" id="s1"></div>
 
     <section class="section1">
         <h2 style="font-size:30px" class="UnderMainTitleWords"> Бесплатный вебинар для начинающих поставщиков  — ИП и ООО</h2>
@@ -36,7 +34,7 @@
         <img src="img/Slide1img.png" class="ImagesSL1">
     </section>
 
-    <section class="section2">
+    <section class="section2" id="s2">
         <h2>На вебинаре вы узнаете</h2>
         <div class="pictureSl2">
             <img src="img/Sl2P1.png" class="Sl2P1" alt="start picture">
@@ -45,42 +43,71 @@
         </div>
     </section>
 
-    <section class="section3">
+    <section class="section3" id="s3">
         <h2>Программа вебинара</h2>
         <div class="analbys">
             <img src="img/chain.png" alt="task" class="Sl3P">
-
             <div class="t1">
                 Работа поставщика с договором Обжалование действий заказчиков
             </div>
-
             <div class="t2">
                 Работа поставщика с договором и обжалование действий заказчиков
             </div>
-
             <div class="t3">
                 Работа поставщика с договором и обжалование действий заказчика
             </div>
-
             <div class="t4">
                 Основные и альтернативные источники информации для использования в работе
             </div>
-
             <div class="t5">
                 Кто имеет преимущество в закупках. Коммерческие закупки
             </div>
-
             <div class="t6">
                 Работа поставщика с договором и обжалование действий заказчиков
             </div>
-
-            <div class="kostyl3"></div>
-
         </div>
-
     </section>
 
-    <section class="section7">
+    <section class="section4" id="s4">
+        <h2 class="speaks"> СПИКЕРЫ </h2>
+        <div class="speakerss">
+            <div class="Sl4P1">
+                <img src="img/speaker_Ksenia.png" alt="speaker_Ksenia">
+            </div> 
+            <div class="Sl4P2">
+                <img src="img/speaker_Alexandr.png" alt="speaker_Alexandr">
+            </div>
+            <div class="Sl4P3">
+                <img src="img/speaker_Mihail.png" alt="speaker_Mihail">
+            </div>
+            <div class="speaker_Ksenia_text" style="color: white;">
+                <h3>Ксения Грозовая</h3>
+                Потомственная шаманка. Наведет сглазы и порчи на ваших конкурентов, параллельно рассказав все о подготовке к участию в закупках. Сертифицированный преподаватель-практик с 8-летним опытом работы в сфере государственного заказа. Может дать в бубен.
+            </div>
+            <div class="speaker_Alexandr_text" style="color: white;">
+                <h3>Александр Галков</h3>
+                Настолько преисполнился в своем познании, что даже стал немного 2д… Хотя ему всего лишь 24 года, 30 из которых, между прочим, он занимается очень даже крупными госзакупками. 
+            </div>
+            <div class="speaker_Mihail_text" style=" color: white;">
+                <h3>Михаил Петухов</h3>
+                Даже по фото видно, что он серьезный дядя, который не раз делал дела в сфере гос.закупок. Написал более 10 0000 заявок на участие в тендерах. А вот сколько из них успешных - узнаете, подписавшись на вебинар
+            </div>
+        </div>
+    </section>
+
+    <section class="section6" id="s6">
+        <h2>Отзывы</h2>
+        <div class="comments">
+            <div>
+                <img src="src\img\Sl6P2.png">
+                <a class="comment1">ПроходилF в 2022 г. обучение по программе "Эксперт в сфере закупок". Отличный курс!<br>
+                Подойдет для тех, кто обучается гос закупкам с нуля.</a>
+            </div>    
+            <a class="comment2">максимально адекватное совмещение видео-материалов, текста и тестовых проверочных заданий, понятный интерфейс. супер.</a>
+        </div>
+    </section>
+
+    <section class="section7"  id="s7">
         <h2 style="font-size:70px" class="Regist"><strong>Зарегистрироваться</strong></h2>
         <h2 style="font-size:25px">ОСТАВЬТЕ ИНФОРМАЦИЮ О СЕБЕ, ЧТОБЫ ПОЛУЧИТЬ ДОСТУП К ВЕБИНАРУ <br> И ЧАК-ЧАК НА ПОЧТУ</h2>
         <form class="Registration" id="EForm" action="#">
@@ -100,7 +127,7 @@
         <footer class="footer">
             <div class="footer_text">
                 <div>
-                    <div">Бexcursionstoвonbass@gmail.com</div>
+                   <div">Бexcursionstoвonbass@gmail.com</div>
                    <div><a href="https://2gis.ru/norilsk/firm/10696577395982351" style="color: #98C5ED;">+7 (3919) 22‒95‒13</a></div>
                    <div><address">Нансена, 86а</address></div>
                 </div>

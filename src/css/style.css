@@ -5,6 +5,17 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .STEPgroup{
     display: grid;
     position: fixed;
@@ -25,6 +36,14 @@ h2 {
     text-align: center;
     border: 3px solid #063154;
 }
+
+.navigationLink{
+    text-decoration: none;
+}
+
+.navigationLink:link{color: #063154}
+.navigationLink:visited {color: #063154}
+.navigationLink:hover {text-decoration: underline; color: #50718B;}
 
 .Logo{
     grid-area: A;
@@ -210,40 +229,137 @@ h2 {
     grid-area: t1;
     text-align: right;
     margin-bottom: 175px;
+    margin-right: -10%;
 }
 
 .t2{
     grid-area: t2;
     text-align: left;
     margin-top: 175px;
+    margin-left: -5%;
 }
 
 .t3{
     grid-area: t3;
     text-align: right;
     margin-bottom: 175px;
+    margin-right: -10%;
 }
 
 .t4{
     grid-area: t4;
     text-align: left;
     margin-top: 175px;
+    margin-left: -5%;
 }
 
 .t5{
     grid-area: t5;
     text-align: right;
     margin-bottom: 175px;
+    margin-right: -10%;
 }
 
 .t6{
     grid-area: t6;
     text-align: left;
     margin-top: 175px;
+    margin-left: -5%;
 }
 
 .Sl3P{
     grid-area: imgg;
+}
+
+.section4{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 1838px;
+    background-color: #6F90AE;
+    padding-top: 10px;
+    
+    
+}
+
+.speakerss{
+    display: grid;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    align-items: left; 
+    justify-content: left;
+    grid-template-areas:
+    "K tk"
+    "A ta"
+    "M tm"
+}
+
+.Sl4P1{
+    grid-area: K;
+    margin-right: 145px;
+    margin-top: 64px;
+    
+}
+
+.Sl4P2{
+    grid-area: A;
+    margin-right: 145px;
+    margin-top: 195px;
+}
+
+.Sl4P3{
+    grid-area: M;
+    margin-right: 145px;
+    margin-top: 195px;
+    margin-bottom: 170px;
+}
+
+.speaker_Ksenia_text{
+    grid-area: tk;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.speaker_Alexandr_text{
+    grid-area: ta;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 160px;
+    
+}
+
+.speaker_Mihail_text{
+    grid-area: tm;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 160px;
+}
+
+.speaks {
+    color: #FFFFFF;
+    font-size: 78px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.section6{
+    display:block;
+            
+    background-color:white;
+    height: 800px;
+    padding: 50px;
+    justify-items: center;
+
+    text-align: center;
+}
+
+.comment1{
+    background-color:#ffffff;
 }
 
 .section7{
