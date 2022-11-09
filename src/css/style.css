@@ -217,6 +217,7 @@ html {
     text-align: right;
     margin-bottom: 175px;
     margin-right: -10%;
+    align-items: center;
 }
 
 .t2{
@@ -265,7 +266,7 @@ html {
     justify-items: center;
     width: 100%;
     background-color: #6F90AE;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .speakerss{
@@ -420,8 +421,7 @@ html {
 }
 
 .section7{
-    display:block;
-            
+    display:block;     
     background-color:white;
     height: 800px;
     padding: 50px;
@@ -479,7 +479,7 @@ html {
     display: grid;
     grid-template-areas:
     "A B"
-    "name-error email-error";
+    "ne ee";
     justify-content: center;
     column-gap: 30px;
     margin-top: 50px;
@@ -505,8 +505,8 @@ html {
     padding-left: 15px;
 }
 
-#name-error{
-    grid-area: name-error;
+#RNI-error{
+    grid-area: ne;
     display: block;
     margin-bottom: 50px;
     margin-right: 20px;
@@ -530,8 +530,8 @@ html {
     padding-left: 15px;
 }
 
-#email-error{
-    grid-area: email-error;
+#REI-error{
+    grid-area: ee;
     display: block;
     margin-bottom: 50px;
     margin-right: 20px;

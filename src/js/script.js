@@ -54,8 +54,8 @@ $(document).ready(function(){
         }).done(function(){
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('RNI').val('');
-            $('REI').val('');
+            $('#RNI').val('');
+            $('#REI').val('');
         })
         return false;
     })
@@ -66,20 +66,17 @@ $(document).ready(function(){
         if (!$(this).valid()){
             retrun;
         }
-
+        
         $.ajax({
             type: "POST",
             url: 'mailer/smart.php',
             data: $(this).serialize()
         }).done(function(){
-            $("#ZaeeEButton").on('click', function(){
-                $('.Eoverlay,#Regist').fadeOut();
-
+            $('.Eoverlay,#Regist').fadeOut();
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('OverlayInputName').val('');
-            $('OverlayInputEmail').val('');
-            })
+            $('#OverlayInputName').val('');
+            $('#OverlayInputEmail').val('');
         })
         return false;
     })
