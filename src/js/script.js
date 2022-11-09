@@ -57,7 +57,8 @@ $(document).ready(function(){
             alert('gde');
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('RegistInput').trigger('reset');
+            $('RegistNameInput').trigger('reset');
+            $('RegistEmailInput').trigger('reset');
         })
         return false;
     })
@@ -76,9 +77,10 @@ $(document).ready(function(){
         }).done(function(){
             $("#ZaeeEButton").on('click', function(){
                 $('.Eoverlay,#Regist').fadeOut();
+
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('RegistInput').trigger('reset');
+            $('OverlayInput').trigger('reset');
             })
         })
         return false;
