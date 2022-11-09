@@ -56,7 +56,7 @@ h2 {
     display:block;
             
     background-color:white;
-    height: 1000px;
+    height: 900px;
     width: 100%;
     justify-items: center;
 
@@ -175,6 +175,77 @@ h2 {
     grid-area: C;
 }
 
+.section3{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.analbys{
+    display: grid;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "t1 t1 imgg t2 t2"
+    "t1 t1 imgg t2 t2"
+    "t3 t3 imgg t4 t4"
+    "t3 t3 imgg t4 t4"
+    "t5 t5 imgg t6 t6"
+    "t5 t5 imgg t6 t6";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-family: 'Krub';
+    font-style: normal;
+    color: #063154;
+    font-size: 30px;
+}
+
+.t1{
+    grid-area: t1;
+    text-align: right;
+    margin-bottom: 175px;
+}
+
+.t2{
+    grid-area: t2;
+    text-align: left;
+    margin-top: 175px;
+}
+
+.t3{
+    grid-area: t3;
+    text-align: right;
+    margin-bottom: 175px;
+}
+
+.t4{
+    grid-area: t4;
+    text-align: left;
+    margin-top: 175px;
+}
+
+.t5{
+    grid-area: t5;
+    text-align: right;
+    margin-bottom: 175px;
+}
+
+.t6{
+    grid-area: t6;
+    text-align: left;
+    margin-top: 175px;
+}
+
+.Sl3P{
+    grid-area: imgg;
+}
+
 .section7{
     display:block;
             
@@ -265,7 +336,7 @@ h2 {
     grid-area: name-error;
     display: block;
     margin-bottom: 50px;
-   margin-right: 20px;
+    margin-right: 20px;
 }
 
 .RegistEmailInput{
