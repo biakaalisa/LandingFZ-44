@@ -88,26 +88,42 @@ h2 {
 }
 
 .OverlayRegistration{
-    display: grid;
-    justify-items:center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-template-areas:
-        "A"
-        "B"
-        "C";
-
     margin-top: 50px;
-    row-gap: 50px;
-    column-gap: 10px;
 
     color:#ffffff;
     font-size:20px;
     text-align: center;
-    margin-bottom: 50px;
+    align-items: center
+}
+
+.OverlayInput{
+    width: 400px;
+    height: 65px;
+    border-color: #83a3bf5d;
+    background: #83a3bf5d;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    font-family: 'Krub';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 47px;
+    padding-left: 15px;
+}
+
+#ZaeeEButton{
+    margin-bottom: 15px;
 }
 
 .EAgreement{
+    width: 75%;
+    margin-top: 30px;
     color:#98C5ED;
+    margin-bottom: 25px;
 }
 
 .Emodal{
@@ -117,9 +133,17 @@ h2 {
     transform: translate(-50%, -50%);
 
     width: 550px;
-    height: 600px;
+    min-height: 500px;
     background-color:#0A2840;
     border-radius: 10px;
+}
+
+.ExitKrest{
+    position: absolute;
+    right: -50px;
+    font-size: 40px;
+    line-height: 20px;
+    color: #ffffff;
 }
 
 .section2{
@@ -210,7 +234,8 @@ h2 {
 .Input{
     display: grid;
     grid-template-areas:
-    "A B";
+    "A B"
+    "name-error email-error";
     justify-content: center;
     column-gap: 30px;
     margin-top: 50px;
@@ -226,6 +251,7 @@ h2 {
     background: #83a3bf5d;
     border-radius: 5px;
     gap: 50px;
+    margin-bottom: 15px;
 
     font-family: 'Krub';
     font-style: normal;
@@ -236,9 +262,10 @@ h2 {
 }
 
 #name-error{
-    margin-top: 15px;
+    grid-area: name-error;
     display: block;
     margin-bottom: 50px;
+   margin-right: 20px;
 }
 
 .RegistEmailInput{
@@ -249,6 +276,7 @@ h2 {
     background: #83a3bf5d;
     border-radius: 5px;
     top: 30px;
+    margin-bottom: 15px;
 
     font-family: 'Krub';
     font-style: normal;
@@ -259,10 +287,11 @@ h2 {
 }
 
 #email-error{
-    margin-top: 15px;
+    grid-area: email-error;
     display: block;
+    margin-bottom: 50px;
+    margin-right: 20px;
 }
-
 
 .agreement{
     margin-top: 40px;

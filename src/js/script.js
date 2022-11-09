@@ -13,40 +13,74 @@ $(document).ready(function(){
             email: "Корейцы сперли Вашу собаку??"
         }
     });
-    
 
-    $("#EButton").on('click', function(){
-        $('.overlay,#Thanks').fadeIn();
-    })
+    $('.OverlayRegistration').validate({
+        rules:{
+            name: 'required',
+            email:{
+                required: true,
+                email: true
+            }
+        },
+        messages:{
+            name: "Пожалуйста, введите Ваше ФИО",
+            email: "Корейцы сперли Вашу собаку??"
+        }
+    });
+    
     $("[data-modal=modal_close]").on('click', function(){
         $('.overlay,#Thanks').fadeOut();
     })
 
-
     $("#ZaEButton").on('click', function(){
         $('.Eoverlay,#Regist').fadeIn();
     })
-    $("#ZaeeEButton").on('click', function(){
+    
+    $("#ExitKrest").on('click', function(){
         $('.Eoverlay,#Regist').fadeOut();
-        $('.overlay,#Thanks').fadeIn();
     })
 
+    $("#EForm").on("submit", function(e){
+        e.preventDefault();      //отменить стандарт.поведен браузера (после отправки формы перезагрузка страницы произвоиться не будет)
 
+        if (!$(this).valid()){
+            retrun;
+        }
+        
+        alert("click-clack")
 
-
-    /*$("#EButton").on('click', function(e){
-
-        e.preventDefault();      //отменить стандарт.поведен браузера (после отправки формы
-                                    //перезагрузка страницы произвоиться не будет)
         $.ajax({
             type: "POST",
             url: 'mailer/smart.php',
             data: $(this).serialize()
         }).done(function(){
+            alert('gde');
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
             $('RegistInput').trigger('reset');
         })
         return false;
-    })*/
+    })
+
+    $("#EOForm").on("submit", function(e){
+        e.preventDefault();
+
+        if (!$(this).valid()){
+            retrun;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: 'mailer/smart.php',
+            data: $(this).serialize()
+        }).done(function(){
+            $("#ZaeeEButton").on('click', function(){
+                $('.Eoverlay,#Regist').fadeOut();
+            $(this).find("input").val("");
+            $('.overlay, #Thanks').fadeIn();
+            $('RegistInput').trigger('reset');
+            })
+        })
+        return false;
+    })
 })

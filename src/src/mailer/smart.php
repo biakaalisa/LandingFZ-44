@@ -3,31 +3,6 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 
-$token = "5540113565:AAGfYXnLU-igyw5VqikocwT2sQgLrsOhPco";
-$chat_id = "-896319528";
-
-$arr = array(
-    'Имя пользователя: ' => $name,
-    'Email: ' => $email
-);
-
-foreach($arr as $key => $value){
-    $txt .= "<b>".$key."</b>".$value."%A";
-}
-
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
-
-if ($sendToTelegram){
-    return false;
-}else {
-    return true;
-}
-
-
-
-
-/*
-
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
@@ -37,13 +12,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';                 			// Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
+$mail->Username = 'balisastarikova@gmail.com';                 			// Наш логин
+$mail->Password = 'qtduypobohqpewjz';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('', 'От лучших девочек');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->setFrom('balisastarikova@gmail.com', 'От лучших девочек');   // От кого письмо 
+$mail->addAddress('starikova.aliska@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -62,5 +37,6 @@ if(!$mail->send()) {
     return false;
 } else {
     return true;
-}*/
+}
+
 ?>
