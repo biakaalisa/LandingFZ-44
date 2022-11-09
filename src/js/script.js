@@ -46,19 +46,16 @@ $(document).ready(function(){
         if (!$(this).valid()){
             retrun;
         }
-        
-        alert("click-clack")
 
         $.ajax({
             type: "POST",
             url: 'mailer/smart.php',
             data: $(this).serialize()
         }).done(function(){
-            alert('gde');
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('RegistNameInput').trigger('reset');
-            $('RegistEmailInput').trigger('reset');
+            $('RNI').val('');
+            $('REI').val('');
         })
         return false;
     })
@@ -80,7 +77,8 @@ $(document).ready(function(){
 
             $(this).find("input").val("");
             $('.overlay, #Thanks').fadeIn();
-            $('OverlayInput').trigger('reset');
+            $('OverlayInputName').val('');
+            $('OverlayInputEmail').val('');
             })
         })
         return false;

@@ -1,3 +1,8 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 h2 {
     color: #063154;
     font-size: 60px;
@@ -17,16 +22,17 @@ html {
 }
 
 .STEPgroup{
+    right: 0px;
+    left: 0px;
     display: grid;
     position: fixed;
-    grid-template-areas:
-    "ABCDE";
 
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
     height: 100px;
     width: 100%;
+    box-sizing: border-box;     /*штукка, что учитывает доп границы(рамки)*/
 
     background-color: #ffffff;
     font-family: 'Krub';
@@ -44,26 +50,6 @@ html {
 .navigationLink:link{color: #063154}
 .navigationLink:visited {color: #063154}
 .navigationLink:hover {text-decoration: underline; color: #50718B;}
-
-.Logo{
-    grid-area: A;
-}
-
-.HeaderProgramm{
-    grid-area: B;
-}
-
-.HeaderSpikers{
-    grid-area: C;
-}
-
-.HeaderFeedback{
-    grid-area: D;
-}
-
-.HeaderReg{
-    grid-area: E;
-}
 
 .Kostyl{
     height: 125px;
@@ -132,6 +118,7 @@ html {
     font-size: 20px;
     line-height: 47px;
     padding-left: 15px;
+    color: rgb(255, 255, 255);
 }
 
 #ZaeeEButton{
@@ -277,11 +264,8 @@ html {
     align-items: center;
     justify-items: center;
     width: 100%;
-    height: 1838px;
     background-color: #6F90AE;
     padding-top: 10px;
-    
-    
 }
 
 .speakerss{
@@ -347,6 +331,78 @@ html {
     
 }
 
+.section5{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    padding-top: 10px;
+}
+
+.comment{
+    display: grid;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    align-items: center; 
+    justify-content: center;
+    grid-template-areas:
+    " "
+}
+
+.User1_comment{
+    display: grid;
+    grid-template-areas:
+    "tekst_U1 tekst_U1 pic_U1";
+    align-items: center; 
+    justify-content: center;
+    background-image: url("Sl6P1.png");
+    width: 1000px;
+    height: 262px;
+    margin-bottom: 70px;
+}
+
+.Sl5PU1{
+    margin-bottom: 55px;
+    margin-right: 45px;
+}
+
+.U1Com_tekst{
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 120px;
+    margin-bottom: 58px;
+}
+
+.User2_comment{
+    display: grid;
+    grid-template-areas:
+    "pic_U2 tekst_U2 tekst_U2";
+    align-items: center; 
+    justify-content: center;
+    background-image: url("Sl6P2.png");
+    width: 1020px;
+    height: 262px;
+}
+
+.Sl5PU2{
+    margin-bottom: 55px;
+    margin-left: 45px;
+}
+
+.U2Com_tekst{
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 152px;
+    margin-bottom: 58px;
+}
+
 .section6{
     display:block;
             
@@ -359,6 +415,7 @@ html {
 }
 
 .comment1{
+    background-image: url("aboba.png");
     background-color:#ffffff;
 }
 

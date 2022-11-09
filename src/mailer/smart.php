@@ -23,9 +23,6 @@ if ($sendToTelegram){
     return true;
 }
 
-
-
-
 /*
 
 require_once('phpmailer/PHPMailerAutoload.php');

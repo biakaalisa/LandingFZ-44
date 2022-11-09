@@ -18,7 +18,7 @@
 <body>
     
     <header class="STEPgroup">
-        <img src="img/Logo.png" id="Logo" href="#s1">
+        <img src="img/Logo.png" id='Logo' href="#s1">
         <a class="navigationLink" id="HeaderProgramm" href="#s2">Программа</a>
         <a class="navigationLink" id="HeaderSpikers" href="#s4">Спикеры</a>
         <a class="navigationLink" id="HeaderFeedback" href="#s6">Отзывы</a>
@@ -96,24 +96,35 @@
     </section>
 
     <section class="section6" id="s6">
-        <h2>Отзывы</h2>
-        <div class="comments">
-            <div>
-                <img src="src\img\Sl6P2.png">
-                <a class="comment1">ПроходилF в 2022 г. обучение по программе "Эксперт в сфере закупок". Отличный курс!<br>
-                Подойдет для тех, кто обучается гос закупкам с нуля.</a>
-            </div>    
-            <a class="comment2">максимально адекватное совмещение видео-материалов, текста и тестовых проверочных заданий, понятный интерфейс. супер.</a>
+        <h2 class="feedback"> Отзывы </h2>
+        <div class="comment">
+            <div class="User1_comment">
+                <a class="U1Com_tekst" style="grid-area: tekst_U1">
+                    Проходил в 2022 г. обучение по программе "Эксперт в сфере закупок". Отличный курс! 
+                    Подойдет для тех, кто обучается гос закупкам с нуля.
+                    <br><br>Иннокентий В. 
+                </a>
+                <img src="img/User1.png" alt="comments" class="Sl5PU1" style="grid-area: pic_U1">
+            </div>
+
+            <div class="User2_comment">
+                <a class="U2Com_tekst" style="grid-area: tekst_U2">
+                    Максимально адекватное совмещение видео-материалов, текста и тестовых проверочных заданий, понятный интерфейс. Супер.
+                    <br><br>Джони Ч.
+                </a>
+                <img src="img/User2.png" alt="comments" class="Sl5PU2" style="grid-area: pic_U2">
+            </div>
         </div>
     </section>
+
 
     <section class="section7"  id="s7">
         <h2 style="font-size:70px" class="Regist"><strong>Зарегистрироваться</strong></h2>
         <h2 style="font-size:25px">ОСТАВЬТЕ ИНФОРМАЦИЮ О СЕБЕ, ЧТОБЫ ПОЛУЧИТЬ ДОСТУП К ВЕБИНАРУ <br> И ЧАК-ЧАК НА ПОЧТУ</h2>
         <form class="Registration" id="EForm" action="#">
             <div class="Input">
-            <input class="RegistNameInput" name="name" type="text" placeholder="ФИО*">
-            <input class="RegistEmailInput" name="email" type="email" placeholder="Электронная почта*">
+            <input class="RegistNameInput" name="name" type="text" placeholder="ФИО*" id="RNI">
+            <input class="RegistEmailInput" name="email" type="email" placeholder="Электронная почта*" id="REI">
             </div>
             <hr size="2" color='#063154' width=100%;>
             <button class="RegistButton" type="submit" id="EButton">Записаться</button>
