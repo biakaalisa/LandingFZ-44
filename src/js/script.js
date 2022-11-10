@@ -27,18 +27,22 @@ $(document).ready(function(){
             email: "Корейцы сперли Вашу собаку??"
         }
     });
+
+    $("#Prize").on('click',function(){
+        window.open('https://t.me/FZ44LandingBot');
+    });
     
     $("[data-modal=modal_close]").on('click', function(){
         $('.overlay,#Thanks').fadeOut();
-    })
+    });
 
-    $("#ZaEButton").on('click', function(){
-        $('.Eoverlay,#Regist').fadeIn();
-    })
+    $("#ZaEButton").on('click', function(){         
+        $('.overlay, #Thanks').fadeIn();        //$('.Eoverlay,#Regist').fadeIn();
+    });
     
     $("#ExitKrest").on('click', function(){
         $('.Eoverlay,#Regist').fadeOut();
-    })
+    });
 
     $("#EForm").on("submit", function(e){
         e.preventDefault();      //отменить стандарт.поведен браузера (после отправки формы перезагрузка страницы произвоиться не будет)
@@ -58,7 +62,7 @@ $(document).ready(function(){
             $('#REI').val('');
         })
         return false;
-    })
+    });
 
     $("#EOForm").on("submit", function(e){
         e.preventDefault();
@@ -79,5 +83,5 @@ $(document).ready(function(){
             $('#OverlayInputEmail').val('');
         })
         return false;
-    })
+    });
 })

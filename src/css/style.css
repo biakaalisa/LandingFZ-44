@@ -269,6 +269,15 @@ html {
     padding-top: 30px;
 }
 
+.section4{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: #6F90AE;
+    padding-top: 10px;    
+}
+
 .speakerss{
     display: grid;
     width: 70%;
@@ -306,7 +315,7 @@ html {
     grid-area: tk;
     font-size: 30px;
     font-weight: bold;
-    
+    background-color: #6F90AE;    
 }
 
 .speaker_Alexandr_text{
@@ -314,7 +323,7 @@ html {
     font-size: 30px;
     font-weight: bold;
     margin-top: 160px;
-    
+    background-color: #6F90AE;
 }
 
 .speaker_Mihail_text{
@@ -322,6 +331,7 @@ html {
     font-size: 30px;
     font-weight: bold;
     margin-top: 160px;
+    background-color: #6F90AE;
 }
 
 .speaks {
@@ -329,7 +339,6 @@ html {
     font-size: 78px;
     font-weight: bold;
     text-align: center;
-    
 }
 
 .section5{
@@ -376,6 +385,7 @@ html {
     justify-content: center;
     margin-left: 120px;
     margin-bottom: 58px;
+    color:#063154;
 }
 
 .User2_comment{
@@ -402,6 +412,7 @@ html {
     margin-left: 30px;
     margin-right: 152px;
     margin-bottom: 58px;
+    color:#063154;
 }
 
 .section6{
@@ -577,9 +588,10 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    min-width: 550px;
+    min-height: 370px;
     width: 550px;
-    height: 300px;
+    height: 35%;
     background-color:#0A2840;
     border-radius: 10px;
 }
@@ -610,13 +622,13 @@ html {
 .ModalButton{
     position: absolute;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 
     width: 334px;
     height: 78px;
-    border-color: #062138;
+    border:#98C5ED;
     background: #98C5ED;
-    margin-top: 65px;
 
     font-family: 'Krub';
     font-style: normal;
@@ -626,3 +638,40 @@ html {
     text-align: center;
     color: #ffffff;
 }
+
+.modal_description_prize{
+    position: absolute;
+    left: 40%;
+    transform: translate(-30%, -70%);
+    top: 70%;
+
+    text-align: center;
+    font-family: 'Krub';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+#Prize{
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 82%;
+
+    background-color: #98C5ED;
+    border:#98C5ED;
+    color:#FFFFFF;
+    transition-duration: 0.6s;
+}
+
+#Prize:hover{
+    transition-duration: 0.4s;
+    background-color: #0A2840;
+    border-radius: 10px;
+    border: 1px solid #0A2840;
+    box-shadow: 10px 10px 80px 10px #98C5ED;
+  }
