@@ -297,44 +297,49 @@ html {
 .Sl4P1{
     grid-area: K;
     margin-right: 145px;
-    margin-top: 64px;
+    /*margin-top: 50px;*/
     
 }
 
 .Sl4P2{
     grid-area: A;
     margin-right: 145px;
-    margin-top: 195px;
+    /*margin-top: 50px;*/
 }
 
 .Sl4P3{
     grid-area: M;
     margin-right: 145px;
-    margin-top: 195px;
-    margin-bottom: 170px;
+    /*margin-top: 50px;*/
+    margin-bottom: 50px;
 }
 
 .speaker_Ksenia_text{
     grid-area: tk;
     font-size: 30px;
     font-weight: bold;
-    background-color: #6F90AE;    
+    background-color: #6F90AE;
+    text-align: justify;
+    align-self: center;
+    max-width: 1000px;  
 }
 
 .speaker_Alexandr_text{
     grid-area: ta;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 160px;
     background-color: #6F90AE;
+    text-align: justify;
+    align-self: center;  
 }
 
 .speaker_Mihail_text{
     grid-area: tm;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 160px;
     background-color: #6F90AE;
+    text-align: justify;
+    align-self: center;
 }
 
 .speaks {
@@ -342,6 +347,7 @@ html {
     font-size: 78px;
     font-weight: bold;
     text-align: center;
+    margin-top: 50px;
 }
 
 .section5{

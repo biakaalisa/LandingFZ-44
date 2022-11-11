@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
 
     $("#ZaEButton").on('click', function(){   
-        $('.Eoverlay,#Regist').fadeIn();      
+        $('.Eoverlay,#Regist').fadeIn();
     });
     
     $("#ExitKrest").on('click', function(){

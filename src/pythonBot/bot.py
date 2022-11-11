@@ -1,6 +1,6 @@
 import telebot
 
-bot = telebot.TeleBot("5540113565:AAGfYXnLU-igyw5VqikocwT2sQgLrsOhPco")     #токен бота
+bot = telebot.TeleBot("")     #токен бота
 
 @bot.message_handler(commands=['start', "send_doc"])    #отслеживание команд в кавычках отслеживаемая
 

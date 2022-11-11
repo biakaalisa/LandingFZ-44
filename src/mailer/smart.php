@@ -3,8 +3,8 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 
-$token = "5540113565:AAGfYXnLU-igyw5VqikocwT2sQgLrsOhPco";
-$chat_id = "-896319528";
+$token = "";
+$chat_id = "";
 
 $arr = array(
     'Имя пользователя: ' => $name,
@@ -34,12 +34,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'alifa.san@yandex.ru';                             // Наш логин
+$mail->Username = '';                             // Наш логин
 $mail->Password = 'yxvwzpkhocxowiud';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, ssl also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('alifa.san@yandex.ru', 'От лучших девочек');   // От кого письмо 
+$mail->setFrom('', 'От лучших девочек');   // От кого письмо 
 $mail->addAddress('fasivo4476@klblogs.com'); 
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
