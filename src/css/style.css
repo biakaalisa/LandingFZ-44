@@ -286,8 +286,11 @@ html {
     align-items: left; 
     justify-content: left;
     grid-template-areas:
+    "KN KN"
     "K tk"
+    "AN AN"
     "A ta"
+    "MN MN"
     "M tm"
 }
 

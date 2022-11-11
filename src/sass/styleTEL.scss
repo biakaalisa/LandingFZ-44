@@ -1,0 +1,200 @@
+@media(max-width: 1140px){
+    .STEPgroup{
+        right: 0px;
+        left: 0px;
+        display: grid;
+        position: absolute;
+    
+        grid-template-rows: repeat(5, 1fr);
+        align-items: center;
+        justify-items: left;
+        height: 100px;
+        width: 100%;
+        box-sizing: border-box;     /*штукка, что учитывает доп границы(рамки)*/
+    
+        background-color: #ffffff;
+        font-family: 'Krub';
+        font-style: normal;
+        color:#3C3C3C;
+        font-size: 30px;
+        text-align: center;
+        border: 3px solid #063154;
+    }
+
+    .section1{
+        display:block;
+                
+        background-color:white;
+        height: 850px;
+        width: 100%;
+        justify-items: center;
+    
+        font-family: 'Krub';
+        font-style: normal;
+        text-align: center;
+        color: #063154;
+    }
+    
+    .ImagesSL1{
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    .MainTitleWords{
+        font-size: 60%;
+    }
+
+    .ButtonKostyl{
+        width: 100%;
+    }
+
+    .RegistButton{
+        grid-area: C;
+        width: 70%;
+        height: 78px;
+        border-color: #50718B;
+        margin-top: 40px;
+        background-color:#50718B;       /*цвет пока кнопку не трогают*/
+    
+        color: #ffffff;
+        font-family: 'Krub';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 47px;
+        text-align: center;
+    
+        transition-duration: 0.6s;
+    }
+
+    .RegistButton:hover {           /*что делается при наведении на кнопку*/
+        background-color: #063154;
+        color: white;
+        transition-duration: 0.4s;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    .analbys{
+        font-size: 23px;
+        padding-right: 5%;
+        margin-bottom: 25px;
+    }
+    
+    .t1{text-align: center;}
+    
+    .t2{text-align: center;}
+    
+    .t3{text-align: center;}
+    
+    .t4{text-align: center;}
+    
+    .t5{text-align: center;}
+    
+    .t6{text-align: center;}
+
+    .speakerss{
+        display: grid;
+        width: 70%;
+        margin-right: none;
+        margin-left: none;
+        align-items: left; 
+        justify-content: left;
+        grid-template-areas:
+        "K KN"
+        "tk tk"
+        "A AN"
+        "ta ta"
+        "M MN"
+        "tm tm";
+    }S
+
+    .Sl4P1{
+        grid-area: K;
+        margin-right: none;
+        margin-top: none;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .Sl4P2{
+        grid-area: A;
+        margin-right: 10px;
+        margin-top: 65px;
+        margin-bottom: 10px;
+    }
+    
+    .Sl4P3{
+        grid-area: M;
+        margin-right: 10px;
+        margin-top: 65px;
+        margin-bottom: 10px;
+    }
+
+    .speaker_Ksenia_text{
+        width: 50%;     // это пока костыль на недо-выыравнивание текста
+        grid-area: tk;
+        font-size: 25px;
+        font-weight: lighter;
+        background-color: #6F90AE;    
+        text-align: center;
+    }
+    
+    .speaker_Alexandr_text{
+        width: 50%;
+        grid-area: ta;
+        font-size: 25px;
+        font-weight: lighter;
+        margin-top: 10px;
+        background-color: #6F90AE;
+        text-align: center;
+    }
+    
+    .speaker_Mihail_text{
+        width: 50%;
+        grid-area: tm;
+        font-size: 25px;
+        font-weight: lighter;
+        margin-top: 10px;
+        background-color: #6F90AE;
+        text-align: center;
+    }
+
+    .Emodal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        min-width: 350px;
+        max-width: 350px;
+        min-height: 500px;
+        background-color:#0A2840;
+        border-radius: 10px;
+    }
+
+    .OverlayInput{
+        width: 300px;
+        height: 65px;
+        border-color: #83a3bf5d;
+        background: #83a3bf5d;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    
+        font-family: 'Krub';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 47px;
+        padding-left: 15px;
+        color: rgb(255, 255, 255);
+    }
+
+    .ExitKrest{
+        position: absolute;
+        right: -30px;
+        font-size: 40px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+}
