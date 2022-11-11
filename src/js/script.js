@@ -36,8 +36,8 @@ $(document).ready(function(){
         $('.overlay,#Thanks').fadeOut();
     });
 
-    $("#ZaEButton").on('click', function(){         
-        $('.overlay, #Thanks').fadeIn();        //$('.Eoverlay,#Regist').fadeIn();
+    $("#ZaEButton").on('click', function(){   
+        $('.Eoverlay,#Regist').fadeIn();      
     });
     
     $("#ExitKrest").on('click', function(){
