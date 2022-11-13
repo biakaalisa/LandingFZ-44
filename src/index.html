@@ -20,15 +20,16 @@
 
 <body class="Boody">
     
-    <header class="STEPgroup" id="STEPgroupPC">
-        <img src="img/Logo.png" id='Logo' href="#s1">
-        <a class="navigationLink" id="HeaderProgramm" href="#s2">Программа</a>
-        <a class="navigationLink" id="HeaderSpikers" href="#s4">Спикеры</a>
-        <a class="navigationLink" id="HeaderFeedback" href="#s6">Отзывы</a>
-        <a class="navigationLink" id='HeaderReg' href="#s7" >Регистрация</a>
+    <header class="STEPgroup" id="STEPgroup">
+        <img src="img/Logo.png" style="grid-area:Logo">
+        <a class="navigationLink" style="grid-area:HeaderProgramm; font-size:30px" href="#s2">Программа</a>
+        <a class="navigationLink" style="grid-area:HeaderSpikers; font-size:30px" href="#s4">Спикеры</a>
+        <a class="navigationLink" style="grid-area:HeaderFeedback; font-size:30px" href="#s6">Отзывы</a>
+        <a class="navigationLink" style="grid-area:HeaderReg; font-size:30px" href="#s7" >Регистрация</a>
     </header>
 
     <div class="Kostyl" id="s1"></div>
+
 
     <section class="section1">
         <h2 style="font-size:30px" class="UnderMainTitleWords"> Бесплатный вебинар для начинающих поставщиков  — ИП и ООО</h2>
@@ -75,15 +76,9 @@
     <section class="section4" id="s4">
         <h2 class="speaks"> СПИКЕРЫ </h2>
         <div class="speakerss">
-            <div class="Sl4P1">
-                <img src="img/speaker_Ksenia.png" alt="speaker_Ksenia">
-            </div> 
-            <div class="Sl4P2">
-                <img src="img/speaker_Alexandr.png" alt="speaker_Alexandr">
-            </div>
-            <div class="Sl4P3">
-                <img src="img/speaker_Mihail.png" alt="speaker_Mihail">
-            </div>
+            <img src="img/speaker_Ksenia.png" alt="speaker_Ksenia" class="Sl4P1">
+            <img src="img/speaker_Alexandr.png" alt="speaker_Alexandr" class="Sl4P2">
+            <img src="img/speaker_Mihail.png" alt="speaker_Mihail" class="Sl4P3">
             <h3 style="grid-area: KN;"><u>Ксения Грозовая</u></h3>
             <div class="speaker_Ksenia_text" style="color: white;">
                 Потомственная шаманка. Наведет сглазы и порчи на ваших конкурентов, параллельно рассказав все о подготовке к участию в закупках. Сертифицированный преподаватель-практик с 8-летним опытом работы в сфере государственного заказа. Может дать в бубен.
@@ -124,14 +119,14 @@
 
 
     <section class="section7"  id="s7">
-        <h2 style="font-size:70px" class="Regist"><strong>Зарегистрироваться</strong></h2>
+        <h2 class="Regist"><strong>Зарегистрироваться</strong></h2>
         <h2 style="font-size:25px">ОСТАВЬТЕ ИНФОРМАЦИЮ О СЕБЕ, ЧТОБЫ ПОЛУЧИТЬ ДОСТУП К ВЕБИНАРУ <br> И ЧАК-ЧАК НА ПОЧТУ</h2>
         <form class="Registration" id="EForm" action="#">
             <div class="Input">
             <input class="RegistNameInput" name="name" type="text" placeholder="ФИО*" id="RNI">
             <input class="RegistEmailInput" name="email" type="email" placeholder="Электронная почта*" id="REI">
             </div>
-            <hr size="2" color='#063154' width=100%;>
+            <hr size="2" color='#063154' width=80%;>
             <button class="RegistButton" type="submit" id="EButton">Записаться</button>
             <div class="agreement">
             <a>Ввод адреса электронной почты подтверждает ваше</a>

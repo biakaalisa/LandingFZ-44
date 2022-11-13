@@ -369,8 +369,6 @@ html {
     margin-left: 20%;
     align-items: center; 
     justify-content: center;
-    grid-template-areas:
-    " "
 }
 
 .User1_comment{
@@ -439,7 +437,7 @@ html {
 }
 
 .comment1{
-    background-image: url("aboba.png");
+
     background-color:#ffffff;
 }
 

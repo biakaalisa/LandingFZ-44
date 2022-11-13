@@ -84,16 +84,4 @@ $(document).ready(function(){
         })
         return false;
     });
-
-    /*jQuery(($) => {
-        $(window).resize(function(){
-            checkWidth(); // проверит при изменении размера окна клиента
-          });
-        if ($(window).width() < 1440) {
-            $('.section1').fadeOut();
-        }
-        else{
-            $('.section1').fadeIn();
-        }
-    });*/
 })

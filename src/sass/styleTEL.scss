@@ -1,25 +1,14 @@
 @media(max-width: 1140px){
     .STEPgroup{
-        right: 0px;
-        left: 0px;
-        display: grid;
-        position: absolute;
-    
-        grid-template-rows: repeat(5, 1fr);
-        align-items: center;
-        justify-items: left;
-        height: 100px;
-        width: 100%;
-        box-sizing: border-box;     /*штукка, что учитывает доп границы(рамки)*/
-    
-        background-color: #ffffff;
-        font-family: 'Krub';
-        font-style: normal;
-        color:#3C3C3C;
-        font-size: 30px;
-        text-align: center;
-        border: 3px solid #063154;
+        grid-template-areas: 
+        "Logo HeaderProgramm HeaderSpikers"
+        "Logo HeaderReg HeaderFeedback";
+        justify-items:end;
+        grid-template-columns: repeat(3, 1fr);
+        padding-right: 10px;
     }
+
+
 
     .section1{
         display:block;
@@ -98,8 +87,8 @@
         width: 70%;
         margin-right: none;
         margin-left: none;
-        align-items: left; 
-        justify-content: left;
+        align-items: center; 
+        justify-content: center;
         grid-template-areas:
         "K KN"
         "tk tk"
@@ -107,12 +96,17 @@
         "ta ta"
         "M MN"
         "tm tm";
-    }S
+    }
+
+    .speaks{
+        margin-bottom: 10px;
+    }
 
     .Sl4P1{
         grid-area: K;
         margin-right: none;
-        margin-top: none;
+        margin-top: 65px;
+        width: 80%;
         height: auto;
         margin-bottom: 10px;
     }
@@ -122,6 +116,8 @@
         margin-right: 10px;
         margin-top: 65px;
         margin-bottom: 10px;
+        width: 80%;
+        height: auto;
     }
     
     .Sl4P3{
@@ -129,10 +125,11 @@
         margin-right: 10px;
         margin-top: 65px;
         margin-bottom: 10px;
+        width: 80%;
+        height: auto;
     }
 
     .speaker_Ksenia_text{
-        width: 50%;     // это пока костыль на недо-выыравнивание текста
         grid-area: tk;
         font-size: 25px;
         font-weight: lighter;
@@ -141,7 +138,6 @@
     }
     
     .speaker_Alexandr_text{
-        width: 50%;
         grid-area: ta;
         font-size: 25px;
         font-weight: lighter;
@@ -151,7 +147,6 @@
     }
     
     .speaker_Mihail_text{
-        width: 50%;
         grid-area: tm;
         font-size: 25px;
         font-weight: lighter;
@@ -223,4 +218,64 @@
         line-height: 20px;
         color: #ffffff;
     }
+
+    #STEPgroupTEL{
+        display: none;
+    }
+
+    .Input{
+        grid-template-areas:
+        "A"
+        "ne"
+        "B"
+        "ee";
+        justify-items: center;
+      }
+    
+      .RegistNameInput{
+        width: 300px;
+    }
+    
+    .RegistEmailInput{
+      width: 300px;
+    }
+    
+    #EButton{
+      margin-top: 30px;
+    }
+    
+    .section7{
+      height: 900px;
+      padding: 0px;
+    }
+    
+    .Regist{
+      font-size: 40px;
+    }
+    
+    #RNI-error{
+      margin-bottom: 30px;
+    }
+    
+    #REI-error{
+      margin-bottom: 10px;
+    }
+
+    .pictureSl2{
+        grid-template-areas:
+        "A"
+        "B"
+        "C";
+      }
+      
+    .Sl2P1{
+        grid-area: A;
+        margin-bottom: 30px;
+      }
+      
+    .Sl2P2{
+        grid-area: B;
+        margin-bottom: 30px;
+      }
+    
 }
