@@ -28,6 +28,8 @@ html {
     position: fixed;
 
     grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+        "Logo HeaderProgramm HeaderSpikers HeaderFeedback HeaderReg";
     align-items: center;
     justify-items: center;
     height: 100px;
@@ -404,12 +406,15 @@ html {
     display: grid;
     grid-template-areas:
     "pic_U2 tekst_U2 tekst_U2";
+    gap: 10px;
     align-items: center; 
     justify-content: center;
-    background-image: url("Sl6P2.png");
     width: 100%;
+    height: 100%;
     background-size: 100% 100%;
-    height: 262px;
+    margin-bottom: 70px;
+    background-image: url("Sl6P2.png");
+    margin-top: 50px;
 }
 
 .Sl5PU2{
