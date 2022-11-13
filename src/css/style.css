@@ -1,688 +1,178 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-h2 {
-    color: #063154;
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Пример странички">
+    <meta name="author" content="Alisska">
+    <title>Самый лучший на свете лендинг</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\styleTEL.css">
 
-h3 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-}
+    <script src="js/jguery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
 
-html {
-    scroll-behavior: smooth;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+</head>
 
-.STEPgroup{
-    right: 0px;
-    left: 0px;
-    display: grid;
-    position: fixed;
-
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    justify-items: center;
-    height: 100px;
-    width: 100%;
-    box-sizing: border-box;     /*штукка, что учитывает доп границы(рамки)*/
-
-    background-color: #ffffff;
-    font-family: 'Krub';
-    font-style: normal;
-    color:#3C3C3C;
-    font-size: 36px;
-    text-align: center;
-    border: 3px solid #063154;
-}
-
-.navigationLink{
-    text-decoration: none;
-}
-
-.navigationLink:link{color: #063154}
-.navigationLink:visited {color: #063154}
-.navigationLink:hover {text-decoration: underline; color: #50718B;}
-
-.Kostyl{
-    height: 125px;
-    width: 100%;
-    background-color: white;
-}
-
-.section1{
-    display:block;
-            
-    background-color:white;
-    height: 900px;
-    width: 100%;
-    justify-items: center;
-
-    font-family: 'Krub';
-    font-style: normal;
-    text-align: center;
-    color: #063154;
-}
-
-.UnderMainTitleWords{
-    color:#3C3C3C;
-}
-
-.MainTitleWords{
-    margin: 10px;
-}
-
-.ImagesSL1{
-    margin-top: 90px;
-}
-
-.Eoverlay{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color:rgba(0, 0, 0, .55);
-}
-
-.OverlayRegistration{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 50px;
-
-    color:#ffffff;
-    font-size:20px;
-    text-align: center;
-    align-items: center
-}
-
-.OverlayInput{
-    width: 400px;
-    height: 65px;
-    border-color: #83a3bf5d;
-    background: #83a3bf5d;
-    border-radius: 5px;
-    margin-bottom: 25px;
-
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 47px;
-    padding-left: 15px;
-    color: rgb(255, 255, 255);
-}
-
-#ZaeeEButton{
-    margin-bottom: 15px;
-}
-
-.EAgreement{
-    width: 75%;
-    margin-top: 30px;
-    color:#98C5ED;
-    margin-bottom: 25px;
-}
-
-.Emodal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 550px;
-    min-height: 500px;
-    background-color:#0A2840;
-    border-radius: 10px;
-}
-
-.ExitKrest{
-    position: absolute;
-    right: -50px;
-    font-size: 40px;
-    line-height: 20px;
-    color: #ffffff;
-}
-
-.section2{
-    display: block;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.pictureSl2{
-    display: grid;
-    grid-template-areas:
-    "A B C";
-    align-items: center; 
-    justify-content: center;
-    column-gap: 30px;
-    margin-top: 100px;
-    justify-items:end;
-    margin-bottom:  100px;
-}
-
-.Sl2P1{
-    grid-area: A;
-}
-
-.Sl2P2{
-    grid-area: B;
-}
-
-.Sl2P3{
-    grid-area: C;
-}
-
-.section3{
-    display: block;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-.analbys{
-    display: grid;
-    width: 80%;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: 
-    "t1 t1 imgg t2 t2"
-    "t1 t1 imgg t2 t2"
-    "t3 t3 imgg t4 t4"
-    "t3 t3 imgg t4 t4"
-    "t5 t5 imgg t6 t6"
-    "t5 t5 imgg t6 t6";
-
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    padding-left: 10%;
-    padding-right: 10%;
-
-    font-family: 'Krub';
-    font-style: normal;
-    color: #063154;
-    font-size: 30px;
-}
-
-.t1{
-    grid-area: t1;
-    text-align: right;
-    margin-bottom: 175px;
-    margin-right: -10%;
-    align-items: center;
-}
-
-.t2{
-    grid-area: t2;
-    text-align: left;
-    margin-top: 175px;
-    margin-left: -5%;
-}
-
-.t3{
-    grid-area: t3;
-    text-align: right;
-    margin-bottom: 175px;
-    margin-right: -10%;
-}
-
-.t4{
-    grid-area: t4;
-    text-align: left;
-    margin-top: 175px;
-    margin-left: -5%;
-}
-
-.t5{
-    grid-area: t5;
-    text-align: right;
-    margin-bottom: 175px;
-    margin-right: -10%;
-}
-
-.t6{
-    grid-area: t6;
-    text-align: left;
-    margin-top: 175px;
-    margin-left: -5%;
-}
-
-.Sl3P{
-    grid-area: imgg;
-}
-
-.section4{
-    display: block;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    background-color: #6F90AE;
-    padding-top: 30px;
-}
-
-.section4{
-    display: block;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-    background-color: #6F90AE;
-    padding-top: 10px;    
-}
-
-.speakerss{
-    display: grid;
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-    align-items: left; 
-    justify-content: left;
-    grid-template-areas:
-    "KN KN"
-    "K tk"
-    "AN AN"
-    "A ta"
-    "MN MN"
-    "M tm"
-}
-
-.Sl4P1{
-    grid-area: K;
-    margin-right: 145px;
-    /*margin-top: 50px;*/
+<body class="Boody">
     
-}
+    <header class="STEPgroup" id="STEPgroupPC">
+        <img src="img/Logo.png" id='Logo' href="#s1">
+        <a class="navigationLink" id="HeaderProgramm" href="#s2">Программа</a>
+        <a class="navigationLink" id="HeaderSpikers" href="#s4">Спикеры</a>
+        <a class="navigationLink" id="HeaderFeedback" href="#s6">Отзывы</a>
+        <a class="navigationLink" id='HeaderReg' href="#s7" >Регистрация</a>
+    </header>
 
-.Sl4P2{
-    grid-area: A;
-    margin-right: 145px;
-    /*margin-top: 50px;*/
-}
+    <div class="Kostyl" id="s1"></div>
 
-.Sl4P3{
-    grid-area: M;
-    margin-right: 145px;
-    /*margin-top: 50px;*/
-    margin-bottom: 50px;
-}
+    <section class="section1">
+        <h2 style="font-size:30px" class="UnderMainTitleWords"> Бесплатный вебинар для начинающих поставщиков  — ИП и ООО</h2>
+        <h1 style="font-size:70px" class="MainTitleWords"> <strong>Закупки по 44-ФЗ для начинающих</strong></h1>
+        <h2 style="font-size:30px;" class="UnderMainTitleWords">31.11.2022 в 18:00 по мск</h2>
+        <div class="ButtonKostyl"><button class="RegistButton" type="submit" id="ZaEButton">Записаться</button></div>
+        <img src="img/Slide1img.png" class="ImagesSL1">
+    </section>
 
-.speaker_Ksenia_text{
-    grid-area: tk;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #6F90AE;
-    text-align: justify;
-    align-self: center;
-    max-width: 1000px;  
-}
+    <section class="section2" id="s2">
+        <div style="padding: 50px;"><h2>На вебинаре вы узнаете</h2><div>
+        <div class="pictureSl2">
+            <img src="img/Sl2P1.png" class="Sl2P1" alt="start picture">
+            <img src="img/Sl2P2.png" class="Sl2P2" alt="start picture">
+            <img src="img/Sl2P3.png"  class="Sl2P3" alt="start picture">
+        </div>
+    </section>
 
-.speaker_Alexandr_text{
-    grid-area: ta;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #6F90AE;
-    text-align: justify;
-    align-self: center;
-    max-width: 1000px;   
-}
+    <section class="section3" id="s3">
+        <h2>Программа вебинара</h2>
+        <div class="analbys">
+            <img src="img/chain.png" alt="task" class="Sl3P">
+            <div class="t1">
+                Работа поставщика с договором Обжалование действий заказчиков
+            </div>
+            <div class="t2">
+                Работа поставщика с договором и обжалование действий заказчиков
+            </div>
+            <div class="t3">
+                Работа поставщика с договором и обжалование действий заказчика
+            </div>
+            <div class="t4">
+                Основные и альтернативные источники информации для использования в работе
+            </div>
+            <div class="t5">
+                Кто имеет преимущество в закупках. Коммерческие закупки
+            </div>
+            <div class="t6">
+                Работа поставщика с договором и обжалование действий заказчиков
+            </div>
+        </div>
+    </section>
 
-.speaker_Mihail_text{
-    grid-area: tm;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #6F90AE;
-    text-align: justify;
-    align-self: center;
-    max-width: 1000px; 
-}
+    <section class="section4" id="s4">
+        <h2 class="speaks"> СПИКЕРЫ </h2>
+        <div class="speakerss">
+            <div class="Sl4P1">
+                <img src="img/speaker_Ksenia.png" alt="speaker_Ksenia">
+            </div> 
+            <div class="Sl4P2">
+                <img src="img/speaker_Alexandr.png" alt="speaker_Alexandr">
+            </div>
+            <div class="Sl4P3">
+                <img src="img/speaker_Mihail.png" alt="speaker_Mihail">
+            </div>
+            <h3 style="grid-area: KN;"><u id="ksenia_zag">Ксения Грозовая</u></h3>
+            <div class="speaker_Ksenia_text" style="color: white;">
+                Потомственная шаманка. Наведет сглазы и порчи на ваших конкурентов, параллельно рассказав все о подготовке к участию в закупках. Сертифицированный преподаватель-практик с 8-летним опытом работы в сфере государственного заказа. Может дать в бубен.
+            </div>
+            <h3 style="grid-area: AN;"><u>Александр Галков</u></h3>
+            <div class="speaker_Alexandr_text" style="color: white;">
+                Настолько преисполнился в своем познании, что даже стал немного 2д… Хотя ему всего лишь 24 года, 30 из которых, между прочим, он занимается очень даже крупными госзакупками. 
+            </div>
+            <h3 style="grid-area: MN;"><u>Михаил Петухов</u></h3>
+            <div class="speaker_Mihail_text" style=" color: white;">
+                Даже по фото видно, что он серьезный дядя, который не раз делал дела в сфере гос.закупок. Написал более 10 0000 заявок на участие в тендерах. А вот сколько из них успешных - узнаете, подписавшись на вебинар
+                <br><br>
+            </div>
+        </div>
+    </section>
 
-.speaks {
-    color: #FFFFFF;
-    font-size: 78px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-}
+    <section class="section6" id="s6">
+        <h2 class="feedback"> Отзывы </h2>
+        <div class="comment">
+            <div class="User1_comment">
+                <a class="U1Com_tekst" style="grid-area: tekst_U1">
+                    Проходил в 2022 г. обучение по программе "Эксперт в сфере закупок". Отличный курс! 
+                    Подойдет для тех, кто обучается гос закупкам с нуля.
+                    <br><br>Иннокентий В. 
+                </a>
+                <img src="img/User1.png" alt="comments" class="Sl5PU1" style="grid-area: pic_U1">
+            </div>
 
-.section5{
-    display: block;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-    background-color: #ffffff;
-    padding-top: 10px;
-}
+            <!-- <div class="User2_comment">
+                <a class="U2Com_tekst" style="grid-area: tekst_U2">
+                    Максимально адекватное совмещение видео-материалов, текста и тестовых проверочных заданий, понятный интерфейс. Супер.
+                    <br><br>Джони Ч.
+                </a>
+                <img src="img/User2.png" alt="comments" class="Sl5PU2" style="grid-area: pic_U2">
+            </div> -->
+        </div>
+    </section>
 
-.comment{
-    display: grid;
-    width: 60%;
-    margin-right: 20%;
-    margin-left: 20%;
-    align-items: center; 
-    justify-content: center;
-    grid-template-areas:
-    " "
-}
 
-.User1_comment{
-    display: grid;
-    grid-template-areas:
-    "tekst_U1 tekst_U1 pic_U1";
-    align-items: center; 
-    justify-content: center;
-    background-image: url("Sl6P1.png");
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    margin-bottom: 70px;
-}
+    <section class="section7"  id="s7">
+        <h2 class="Regist"><strong>Зарегистрироваться</strong></h2>
+        <h2 style="font-size:25px">ОСТАВЬТЕ ИНФОРМАЦИЮ О СЕБЕ, ЧТОБЫ ПОЛУЧИТЬ ДОСТУП К ВЕБИНАРУ <br> И ЧАК-ЧАК НА ПОЧТУ</h2>
+        <form class="Registration" id="EForm" action="#">
+            <div class="Input">
+            <input class="RegistNameInput" name="name" type="text" placeholder="ФИО*" id="RNI">
+            <input class="RegistEmailInput" name="email" type="email" placeholder="Электронная почта*" id="REI">
+            </div>
+            <hr size="2" color='#063154' width=80%;>
+            <button class="RegistButton" type="submit" id="EButton">Записаться</button>
+            <div class="agreement">
+            <a>Ввод адреса электронной почты подтверждает ваше</a>
+            <a href = 'https://www.youtube.com/watch?v=tajXWvOZyxQ' style="color: #063154;"> согласие условием передачи данных </a>
+            </div>
+        </form>
+    </section>
 
-.Sl5PU1{
-    margin-bottom: 55px;
-    margin-right: 45px;
-}
+        <footer class="footer">
+            <div class="footer_text">
+                <div>
+                   <div">Бexcursionstoвonbass@gmail.com</div>
+                   <div><a href="https://2gis.ru/norilsk/firm/10696577395982351" style="color: #98C5ED;">+7 (3919) 22‒95‒13</a></div>
+                   <div><address">Нансена, 86а</address></div>
+                </div>
+            </div>
+        </footer>
 
-.U1Com_tekst{
-    font-size: 25px;
-    font-weight: bold;
-    align-items: center; 
-    justify-content: center;
-    margin-left: 120px;
-    margin-bottom: 58px;
-    color:#063154;
-}
+        <div class="overlay">
+            <div class="modal">
+                <div class="modal_subtitle">ДАННЫЕ ОТПРАВЛЕНЫ</div>
+                <div class="modal_description">Спасибо, что выбрали нашу платформу <br> Желаем удачи в вашем бизнесе</div>
+                <div><button class="ModalButton" data-modal="modal_close">Ясно!</button></div>
+                <div class="modal_description_prize" style="font-size:15px">Кнопочка внизу создана для получения подарка<br></div>
+                <button id="Prize">Нажми на меня</button>
+            </div>
+        </div>
 
-.User2_comment{
-    display: grid;
-    grid-template-areas:
-    "pic_U2 tekst_U2 tekst_U2";
-    align-items: center; 
-    justify-content: center;
-    background-image: url("Sl6P2.png");
-    width: 1020px;
-    height: 262px;
-}
-
-.Sl5PU2{
-    margin-bottom: 55px;
-    margin-left: 45px;
-}
-
-.U2Com_tekst{
-    font-size: 25px;
-    font-weight: bold;
-    align-items: center; 
-    justify-content: center;
-    margin-left: 30px;
-    margin-right: 152px;
-    margin-bottom: 58px;
-    color:#063154;
-}
-
-.section6{
-    display:block;        
-    background-color:white;
-    height: 800px;
-    padding: 50px;
-    justify-items: center;
-    text-align: center;
-}
-
-.comment1{
-   
-    background-color:#ffffff;
-}
-
-.section7{
-    display:block;     
-    background-color:white;
-    height: 800px;
-    padding: 50px;
-    justify-items: center;
-
-    border: 5px solid #063154;
-    border-radius: 70px;
-    margin-left: 5%;
-    margin-right: 5%;
-    /*position: relative;     /*обтекание объекта*/
-
-    text-align: center;
-    color: #063154;
-}
-
-.Registration{
-    justify-content: center;
-    margin-top: 50px;
-    width: 100%;
-    row-gap: 50px;
-    column-gap: 10px;
-}
-
-.RegistButton{
-    grid-area: C;
-    width: 500px;
-    height: 78px;
-    border-color: #50718B;
-    margin-top: 40px;
-    background-color:#50718B;       /*цвет пока кнопку не трогают*/
-
-    color: #ffffff;
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 47px;
-    text-align: center;
-
-    transition-duration: 0.6s;
-}
-
-.ButtonKostyl{
-    width: 100%;
-}
-
-.RegistButton:hover {           /*что делается при наведении на кнопку*/
-    background-color: #063154;
-    color: white;
-    transition-duration: 0.4s;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.Input{
-    display: grid;
-    grid-template-areas:
-    "A B"
-    "ne ee";
-    justify-content: center;
-    column-gap: 30px;
-    margin-top: 50px;
-    justify-items:end;
-    margin-bottom:  50px;
-}
-
-.RegistNameInput{
-    grid-area: A;
-    width: 400px;
-    height: 65px;
-    border-color: #83a3bf5d;
-    background: #83a3bf5d;
-    border-radius: 5px;
-    gap: 50px;
-    margin-bottom: 15px;
-
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 47px;
-    padding-left: 15px;
-}
-
-#RNI-error{
-    grid-area: ne;
-    display: block;
-    margin-bottom: 50px;
-    margin-right: 20px;
-}
-
-.RegistEmailInput{
-    grid-area: B;
-    width: 400px;
-    height: 65px;
-    border-color: #83a3bf5d;
-    background: #83a3bf5d;
-    border-radius: 5px;
-    top: 30px;
-    margin-bottom: 15px;
-
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 47px;
-    padding-left: 15px;
-}
-
-#REI-error{
-    grid-area: ee;
-    display: block;
-    margin-bottom: 50px;
-    margin-right: 20px;
-}
-
-.agreement{
-    margin-top: 40px;
-    font-size:20px;
-}
-
-.footer{
-    display: grid;
-    background-color: #0A2840;
-    width: 100%;
-
-    text-decoration-color: #50718B;
-    text-align: center;
-    min-height: 220px;
-    color: #50718B;
-
-    justify-items: center;
-    align-items: center;
-    margin-top: -100px;
-    row-gap: 10px;
-}
-
-.footer_text{
-    font-size: 25px;
-    margin-top: 5px;
-}
-
-.overlay{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color:rgba(0, 0, 0, .55);
-}
-
-.modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 550px;
-    min-height: 370px;
-    width: 550px;
-    height: 35%;
-    background-color:#0A2840;
-    border-radius: 10px;
-}
-
-.modal_subtitle{
-    margin-top: 25px;
-    text-align: center;
-
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 47px;
-    color: #ffffff;
-}
-
-.modal_description{
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 25px;
-    color: #ffffff;
-}
-
-.ModalButton{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 334px;
-    height: 78px;
-    border:#98C5ED;
-    background: #98C5ED;
-
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 47px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.modal_description_prize{
-    position: absolute;
-    left: 40%;
-    transform: translate(-30%, -70%);
-    top: 70%;
-
-    text-align: center;
-    font-family: 'Krub';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 25px;
-    color: #ffffff;
-}
-
-#Prize{
-    height: 40px;
-    width: 150px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 82%;
-
-    background-color: #98C5ED;
-    border:#98C5ED;
-    color:#FFFFFF;
-    transition-duration: 0.6s;
-}
-
-#Prize:hover{
-    transition-duration: 0.4s;
-    background-color: #0A2840;
-    border-radius: 10px;
-    border: 1px solid #0A2840;
-    box-shadow: 10px 10px 80px 10px #98C5ED;
-  }
+        <div class="Eoverlay">
+            <div class="Emodal">
+                <div class="ExitKrest" id="ExitKrest">&times;</div>
+                <form class="OverlayRegistration" id="EOForm" action="#">
+                    <input class="OverlayInput" name="name" type="text" placeholder="ФИО*" id="OverlayInputName">
+                    <input class="OverlayInput" name="email" type="email" placeholder="Электронная почта*" id="OverlayInputEmail">
+                    <hr size="2" color='#063154' width=80%;>
+                    <button class="RegistButton" type="submit" id="ZaeeEButton">Записаться</button>
+                    <div>
+                    <a>Ввод адреса электронной почты подтверждает ваше</a>
+                    <a href = 'https://www.youtube.com/watch?v=tajXWvOZyxQ' class="EAgreement"> согласие условием передачи данных </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
