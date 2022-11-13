@@ -267,8 +267,7 @@
   margin: 0;
   align-items: center; 
   justify-content: center;
-  grid-template-areas:
-  " "
+  
 }
 
 .User1_comment{
@@ -284,6 +283,9 @@
   height: 100%;
   background-size: 100% 100%;
   margin: 0;
+  padding: 15px 15px 15px 15px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .Sl5PU1{
@@ -306,6 +308,55 @@
 
 
 
+  .User2_comment{
+  display: grid;
+  grid-template-areas:
+  "pic_U2 tekst_U2 tekst_U2";
+  align-items: center; 
+  justify-content: center;
+  background-image: none;
+  border: 5px solid #2A5082;
+  border-radius: 55px;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 15px 15px 15px 15px;
+  box-sizing: border-box;
+} 
+
+.Sl5PU2{
+  margin: 0;
+}
+
+.U2Com_tekst{
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center; 
+  justify-content: center;
+  margin: 0;
+  color:#063154;
+} 
+
+
+
+.section7{
+    display:block;     
+    background-color:white;
+    height: 1000px;
+    padding: 50px;
+    justify-items: center;
+
+    border: 5px solid #063154;
+    border-radius: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /*position: relative;     /*обтекание объекта*/
+
+    text-align: center;
+    color: #063154;
+    margin-top: 200px;
+}
 
 
 
@@ -318,9 +369,7 @@
 
 
 
-
-
-
+ 
 
 
 .pictureSl2{
