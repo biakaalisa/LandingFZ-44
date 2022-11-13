@@ -93,14 +93,25 @@
     margin-left: none;
     align-items: left;
     justify-content: left;
-    grid-template-areas: "K KN" "tk tk" "A AN" "ta ta" "M MN" "tm tm";
+    grid-template-areas: 
+    "KN "
+    "K" 
+    "tk" 
+    "AN"
+    "A" 
+    "ta" 
+    "MN" 
+    "M" 
+    "tm";
   }
-  S .Sl4P1 {
+
+  .Sl4P1 {
     grid-area: K;
     margin-right: none;
     margin-top: none;
     height: auto;
     margin-bottom: 10px;
+    position: center;
   }
   .Sl4P2 {
     grid-area: A;
@@ -122,6 +133,8 @@
     background-color: #6F90AE;
     text-align: center;
   }
+
+
   .speaker_Alexandr_text {
     width: 50%;
     grid-area: ta;
@@ -200,4 +213,129 @@
     line-height: 20px;
     color: #ffffff;
   }
+
+  .Input{
+    grid-template-areas:
+    "A"
+    "ne"
+    "B"
+    "ee";
+    justify-items: center;
+  }
+
+  .RegistNameInput{
+    width: 300px;
+}
+
+.RegistEmailInput{
+  width: 300px;
+}
+
+#EButton{
+  margin-top: 30px;
+}
+
+.section7{
+  height: 900px;
+  padding: 0px;
+}
+
+.Regist{
+  font-size: 40px;
+}
+
+#RNI-error{
+  margin-bottom: 30px;
+}
+
+#REI-error{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.comment{
+  display: grid;
+  width: 100%;
+  margin: 0;
+  align-items: center; 
+  justify-content: center;
+  grid-template-areas:
+  " "
+}
+
+.User1_comment{
+  display: grid;
+  grid-template-areas:
+  "tekst_U1 tekst_U1 pic_U1";
+  align-items: center; 
+  justify-content: center;
+  background-image: url("Sl6P1.png");
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+.Sl5PU1{
+  margin: 0;
+}
+
+.U1Com_tekst{
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center; 
+  justify-content: center;
+  margin: 0;
+  color:#063154;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pictureSl2{
+  grid-template-areas:
+  "A"
+  "B"
+  "C";
+}
+
+.Sl2P1{
+  grid-area: A;
+  margin-bottom: 30px;
+}
+
+.Sl2P2{
+  grid-area: B;
+  margin-bottom: 30px;
+}
+
 }
