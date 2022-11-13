@@ -155,6 +155,7 @@ html {
 .section2{
     display: block;
     align-items: center;
+    margin-top: 50px;
 }
 
 .pictureSl2{
@@ -330,7 +331,8 @@ html {
     font-weight: bold;
     background-color: #6F90AE;
     text-align: justify;
-    align-self: center;  
+    align-self: center;
+    max-width: 1000px;   
 }
 
 .speaker_Mihail_text{
@@ -340,6 +342,7 @@ html {
     background-color: #6F90AE;
     text-align: justify;
     align-self: center;
+    max-width: 1000px; 
 }
 
 .speaks {
