@@ -407,7 +407,8 @@ html {
     align-items: center; 
     justify-content: center;
     background-image: url("Sl6P2.png");
-    width: 1020px;
+    width: 100%;
+    background-size: 100% 100%;
     height: 262px;
 }
 
@@ -437,11 +438,6 @@ html {
 }
 
 .comment1{
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> 7608445b95e021c450245a42c9fd125601b92d7f
     background-color:#ffffff;
 }
 
