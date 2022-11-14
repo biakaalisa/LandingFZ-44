@@ -2,9 +2,9 @@
 @media (max-width: 1140px) {
   .STEPgroup {
     grid-template-areas: "Logo HeaderProgramm HeaderSpikers" "Logo HeaderReg HeaderFeedback";
-    justify-items: end;
+    justify-items: start;
     grid-template-columns: repeat(3, 1fr);
-    padding-right: 10px;
+    padding-left: 15px;
   }
   .section1 {
     display: block;
