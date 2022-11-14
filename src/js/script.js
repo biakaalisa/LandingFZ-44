@@ -85,8 +85,4 @@ $(document).ready(function(){
         return false;
     });
 
-    if("#BoringPhoto"== 'mouseover'){
-        $("#SekasPhoto").fadeIn();
-        $("#SekasPhoto").fadeOut();
-    }
 })
